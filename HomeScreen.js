@@ -58,6 +58,7 @@ const HomeScreen = ({ navigation }) => {
             <View key={ad.id} style={commonStyles.adContainer}>
               <Text style={commonStyles.adTitle}>{ad.title}</Text>
               <Text style={commonStyles.adDescription}>{ad.description}</Text>
+              <Text style={commonStyles.adDescription}>{ad.category}</Text>
               <TouchableOpacity
                 onPress={() => handleUpdateAd(ad.id)}
                 style={commonStyles.smallButton}
